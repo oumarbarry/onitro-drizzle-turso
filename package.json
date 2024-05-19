@@ -14,19 +14,16 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@libsql/client": "^0.4.0-pre.5",
-    "drizzle-orm": "^0.29.1",
+    "@libsql/client": "^0.6.0",
+    "drizzle-orm": "^0.30.10",
     "drizzle-zod": "^0.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.6",
-    "@types/node": "^18.19.3",
-    "drizzle-kit": "^0.20.7",
-    "eslint": "^8.56.0",
-    "nitropack": "^2.8.1",
-    "typescript": "^5.3.3"
-  },
-  "overrides": {
-    "drizzle-orm": "^0.29.1"
+    "@antfu/eslint-config": "^2.18.1",
+    "@types/node": "^20.12.12",
+    "drizzle-kit": "^0.21.2",
+    "eslint": "^9.3.0",
+    "nitropack": "^2.9.6",
+    "typescript": "^5.4.5"
   }
 }

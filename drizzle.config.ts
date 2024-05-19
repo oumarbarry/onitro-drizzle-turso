@@ -1,11 +1,10 @@
-import type { Config } from "drizzle-kit"
+import { defineConfig } from "drizzle-kit"
 
-export default {
-  schema: "./src/db/schema.ts",
+export default defineConfig({
+  schema: "./server/db/schema.ts",
+  dialect: "sqlite",
   driver: "turso",
-  dbCredentials: {
-    url: "file:./dev.db",
-  },
-  // verbose: true,
-  // strict: true,
-} satisfies Config
+  dbCredentials: { url: "file:./dev.db" },
+  verbose: true,
+  strict: true,
+})
