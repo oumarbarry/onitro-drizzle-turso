@@ -1,5 +1,9 @@
 # onitro-drizzle-turso
 
+- Nitro v2
+- Drizzle ORM
+- Turso (SQLite on the edge)
+
 ## Usage
 
 ### GitHub Template

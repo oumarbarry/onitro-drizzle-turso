@@ -5,8 +5,8 @@ import * as schema from "./schema"
 const client = process.dev
   ? createClient({ url: "file:./dev.db" })
   : createClient({
-    url: process.env.DATABASE_URL,
-    authToken: process.env.DATABASE_AUTH_TOKEN,
-  })
+      url: process.env.DATABASE_URL,
+      authToken: process.env.DATABASE_AUTH_TOKEN,
+    })
 
-export const db = drizzle(client, { schema })
+export const db = drizzle({ client, schema })

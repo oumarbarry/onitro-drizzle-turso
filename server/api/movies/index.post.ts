@@ -1,8 +1,8 @@
 import { createInsertSchema } from "drizzle-zod"
 
 const insertMovieSchema = createInsertSchema(movies, {
-  title: schema => schema.title.max(50),
-  description: schema => schema.description.max(500),
+  title: schema => schema.max(50),
+  description: schema => schema.max(500),
 })
 
 export default defineEventHandler(async (event) => {

@@ -1,8 +1,8 @@
 # Nitro dev/build outputs
 .output
 .nitro
-.data
 .cache
+.data
 dist
 
 # Node dependencies
@@ -18,7 +18,7 @@ node_modules
 
 # Local env files
 .env
-.env.*
+.env.local
 !.env.example
 
 # DB

@@ -8,9 +8,7 @@ const db = drizzle(createClient({
 }))
 
 console.log("Running migrations")
-
-await migrate(db, { migrationsFolder: "drizzle" })
-
+await migrate(db, { migrationsFolder: "../server/db/migrations" })
 console.log("Migrated successfully")
 
 process.exit(0)

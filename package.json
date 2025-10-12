@@ -2,28 +2,28 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "nitropack dev",
-    "build": "nitropack build",
-    "preview": "node .output/server/index.mjs",
-    "postinstall": "nitropack prepare",
-    "db:generate": "drizzle-kit generate:sqlite",
-    "db:migrate": "bun run scripts/migrate.ts",
+    "dev": "nitro dev",
+    "build": "nitro build",
+    "postinstall": "nitro prepare",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push:sqlite",
     "db:studio": "drizzle-kit studio",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@libsql/client": "^0.6.0",
-    "drizzle-orm": "^0.30.10",
-    "drizzle-zod": "^0.5.1"
+    "@libsql/client": "^0.15.15",
+    "drizzle-orm": "^0.44.6",
+    "drizzle-zod": "^0.8.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.18.1",
-    "@types/node": "^20.12.12",
-    "drizzle-kit": "^0.21.2",
-    "eslint": "^9.3.0",
-    "nitropack": "^2.9.6",
-    "typescript": "^5.4.5"
+    "@antfu/eslint-config": "^5.4.1",
+    "@types/node": "^22.18.10",
+    "drizzle-kit": "^0.31.5",
+    "eslint": "^9.37.0",
+    "h3": "^1.15.4",
+    "nitropack": "^2.12.7",
+    "typescript": "^5.9.3"
   }
 }

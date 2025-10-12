@@ -1,4 +1,3 @@
 {
-  "extends": "./.nitro/types/tsconfig.json",
-  "exclude": ["./eslint.config.mjs"]
+  "extends": "./.nitro/types/tsconfig.json"
 }
