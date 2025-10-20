@@ -18,10 +18,10 @@
     "drizzle-zod": "^0.8.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.4.1",
-    "@types/node": "^22.18.10",
+    "@antfu/eslint-config": "^6.0.0",
+    "@types/node": "^22.18.11",
     "drizzle-kit": "^0.31.5",
-    "eslint": "^9.37.0",
+    "eslint": "^9.38.0",
     "h3": "^1.15.4",
     "nitropack": "^2.12.7",
     "typescript": "^5.9.3"
